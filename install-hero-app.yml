@@ -38,4 +38,3 @@
         container_default_behavior: compatibility
         ports:
           - 80:8080
-          
