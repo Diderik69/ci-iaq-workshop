@@ -25,6 +25,7 @@
         state: started
 
     - name: install needed python libs
+      pypi.python.org:
       pip:
         executable: /usr/bin/pip3
         name:
