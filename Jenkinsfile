@@ -18,7 +18,7 @@ pipeline {
         stage('Run Ansible Playbook') {
             steps {
               sh 'ansible-galaxy collection install -r requirements.yml'
-              sh 'ansible-playbook -i inventory/test.hcloud.yml installhero-app.yml'
+              sh 'ansible-playbook -i inventory/test.hcloud.yml install-hero-app.yml'
               // hier sollen die Playbooks laufen
             }
         }
