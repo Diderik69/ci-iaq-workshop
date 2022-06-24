@@ -23,9 +23,7 @@ pipeline {
     }
     post {
         always {
-          dir('terraform destroy -auto-approve
--var="hcloud_token=${HCLOUD_TOKEN}"') {
-  
+          dir('terraform destroy -auto-approve-var="hcloud_token=${HCLOUD_TOKEN}"') {  
              // hier soll die VM gelöscht werden
           }
          }
