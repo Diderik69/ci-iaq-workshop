@@ -1,4 +1,4 @@
-- hosts: ansible-test-instance
+- hosts: DiRei-ansible-test-instance
   become: true
   tasks:
     - name: add apt key

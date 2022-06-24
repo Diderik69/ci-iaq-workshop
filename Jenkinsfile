@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Lint Ansible Playbook') {
             steps {
+              pip3 install "ansible-lint"
               // ansible lint hinzufügen
             }
         }
@@ -28,7 +29,7 @@ pipeline {
 
         stage('Run Testinfra Tests') {
             steps {
-              sh "py.test --connection=ansible --ansible-inventory inventory/test.hcloud.yml --hosts='ansible://ansible-test-instance' --force-ansible -v test/*.py"
+              sh "py.test --connection=ansible --ansible-inventory inventory/test.hcloud.yml --hosts='ansible://DiRei-ansible-test-instance' --force-ansible -v test/*.py"
             }
         }
     }
