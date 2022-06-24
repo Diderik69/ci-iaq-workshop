@@ -25,7 +25,7 @@
         state: started
 
     - name: install needed python libs
-      pip:
+      ansible.builtin.pip:
         executable: /usr/bin/pip3
         name:
           - docker-py
