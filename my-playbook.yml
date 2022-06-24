@@ -1,1 +1,1 @@
-pip3 install "ansible-lint"
+sh 'pip3 install "ansible-lint"'
