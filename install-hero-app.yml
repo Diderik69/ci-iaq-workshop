@@ -18,7 +18,7 @@
           - containerd.io
           - python3-pip
           
-    - name: service started
+    - name: docker.service
       ansible.builtin.service:
         name: docker
         enabled: true
