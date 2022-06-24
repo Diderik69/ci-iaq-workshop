@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Lint Ansible Playbook') {
             steps {
-              pip3 install "ansible-lint"
+              pip3 install git+https://github.com/ansible-community/ansible-lint.git
               // ansible lint hinzufügen
             }
         }
